@@ -1,0 +1,70 @@
+&namlog
+!   cn_logfile=
+   cn_verbosity='trace'
+   in_maxerror =100
+/
+
+&namcfg
+   cn_varcfg='cfg/variable.cfg'
+   cn_dimcfg='cfg/dimension.cfg'
+   cn_dumcfg='cfg/dummy.cfg'
+/
+
+&namcrs
+   cn_coord0='/home/n02/n02/ryapat30/work/nemo/Data/ORCA12/coordinates_subset.nc'
+   in_perio0=0
+/
+
+&namfin
+   cn_coord1='SOCHIC_IN/coordinates.nc'
+   cn_bathy1='SOCHIC_IN/bathy_meter.nc'
+   in_perio1=0
+/
+
+&namzgr
+!   dn_pp_to_be_computed=
+!   dn_ppsur    =
+!   dn_ppa0     =
+!   dn_ppa1     =
+!   dn_ppa2     = 
+!   dn_ppkth    =
+!   dn_ppkth2   =
+!   dn_ppacr    =
+!   dn_ppacr2   =
+!   dn_ppdzmin  =
+!   dn_pphmax   =
+!   in_nlevel   = 75
+/
+
+&namzps
+!   dn_e3zps_min =
+!   dn_e3zps_rat =
+/
+
+&namvar
+   cn_varfile='vozocrtx:/home/n02/n02/ryapat30/work/nemo/Data/ORCA12/ORCA0083-N06_U_conform.nc'
+!   cn_varinfo=
+/
+
+&namnst
+   in_rhoi=1
+   in_rhoj=1
+/
+
+&nambdy
+!   ln_north = .TRUE.
+!   ln_south = .FALSE.
+!   ln_east  = .FALSE.
+!   ln_west  = .FALSE.
+!   cn_north = 
+!   cn_south = 
+!   cn_east  = 
+!   cn_west  = 
+!   ln_oneseg=.TRUE.
+/
+
+&namout
+   cn_fileout='SOCHIC_IN/bdy_U.nc'
+!   dn_dayofs=
+!   ln_extrap=
+/

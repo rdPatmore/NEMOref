@@ -1,0 +1,34 @@
+&namlog
+   cn_logfile='coord.log'
+/
+
+&namcfg
+   cn_varcfg='cfg/variable.cfg'
+   cn_dimcfg='cfg/dimension.cfg'
+/
+
+&namcrs
+   cn_coord0='/home/n02/n02/ryapat30/work/nemo/Data/ORCA12/coordinates.nc'
+   in_perio0=4
+/
+
+&namvar
+/
+
+&namnst
+   rn_lonmin0=-2
+   rn_lonmax0=2
+   rn_latmin0=-62
+   rn_latmax0=-58
+!   in_imin0=130
+!   in_imax0=135
+!   in_jmin0=10
+!   in_jmax0=15
+
+   in_rhoi=1
+   in_rhoj=1
+/
+
+&namout
+   cn_fileout='SOCHIC_IN/coordinates.nc'
+/

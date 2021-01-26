@@ -1,0 +1,103 @@
+&namlog
+!   cn_logfile  ="meshmask_out.log"
+!   cn_verbosity=
+!   in_maxerror =
+/
+
+&namcfg
+!   cn_varcfg="cfg/variable.cfg"
+!   cn_dimcfg="cfg/dimension.cfg"
+/
+
+&namin
+   cn_bathy = 'SOCHIC_IN/bathy_meter.nc'  !< Bathymetry file
+   cn_coord = 'SOCHIC_IN/coordinates.nc'
+!   cn_isfdep=   !< Iceshelf draft  (ln_isfcav=true)
+   in_perio = 0  !< NEMO periodicity
+!   ln_closea=
+!   ln_c1d=
+/
+
+!&namhgr
+!!   in_mshhgr  =0
+!!   dn_ppglam0 =
+!!   dn_ppgphi0 =
+!!   dn_ppe1_deg=
+!!   dn_ppe2_deg=
+!!   dn_ppe1_m  =
+!!   dn_ppe2_m  =
+!/
+!
+&namzgr
+!!   ln_zco     =
+   ln_zps     = .true.
+!!   ln_sco     =
+!!   ln_isfcav  =  !< presence of ISF
+!!   ln_iscpl   =  !< coupling with ice sheet
+!!   ln_wd      =  !< Wetting/drying activation
+!!   in_nlevel  =
+/
+
+!&namdmin
+!!   dn_hmin    =
+!!   dn_isfhmin =
+!/
+
+!&namzco
+!!   dn_pp_to_be_computed= 999999.
+!   dn_ppsur    =  -3958.951371276829 !  ORCA r4, r2 and r05 coefficients
+!   dn_ppa0     =   103.9530096000000 ! (default coefficients)
+!   dn_ppa1     =   2.415951269000000 !
+!   dn_ppa2     =   100.760928500000 !  Double tanh function parameters
+!   dn_ppkth    =   15.35101370000000 !
+!   dn_ppkth2   =   48.029893720000 !
+!   dn_ppacr    =   7.0            !
+!   dn_ppacr2   =   13.000000000000 !
+!   dn_ppdzmin  =   999999.              !  Minimum vertical spacing
+!   dn_pphmax   =   999999.              !  Maximum depth
+!   in_nlevel   =   75
+!   ln_dbletanh =   .TRUE.
+!/
+!
+!&namzps
+!   dn_e3zps_min = 25
+!   dn_e3zps_rat = 0.2
+!/
+
+!&namsco
+!!   ln_s_sh94  =
+!!   ln_s_sf12  =
+!!   dn_sbot_min=
+!!   dn_sbot_max=
+!!   dn_hc      =
+!!   dn_rmax    =   !< if ln_s_sh94
+!!   dn_theta   =   !< if ln_s_sh94
+!!   dn_thetb   =   !< if ln_s_sh94
+!!   dn_bb      =   !< if ln_s_sh94
+!!   ln_sigcrit =   !< if ln_s_sf12
+!!   dn_alpha   =   !< if ln_s_sf12
+!!   dn_efold   =   !< if ln_s_sf12
+!!   dn_zs      =   !< if ln_s_sf12
+!!   dn_zb_a    =   !< if ln_s_sf12
+!!   dn_zb_b    =   !< if ln_s_sf12
+!/
+!
+!&namwd            !< wetting and drying
+!!  dn_wdmin1 =
+!!  dn_wdmin2 =
+!!  dn_wdld   =
+!/
+!
+!&namgrd
+!!   in_cfg   =
+!!   ln_bench =
+!!   ln_c1d   =
+!/
+
+&namout
+   cn_domcfg ='domain.cfg.nc'
+!   in_msh    = 1   !< number of output file (1,2,3)
+!   in_nproc  =   !< number of processor to be used
+!   in_niproc =   
+!   in_njproc =   
+/

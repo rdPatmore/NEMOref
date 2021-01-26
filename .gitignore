@@ -1,0 +1,9 @@
+*.nc
+*.svn
+*.exe
+tools/SIREN/*.log
+cfg/SOCHIC/BLD
+cfg/SOCHIC/WORK
+cfg/SOCHIC_PATCH/BLD
+cfg/SOCHIC_PATCH/WORK
+

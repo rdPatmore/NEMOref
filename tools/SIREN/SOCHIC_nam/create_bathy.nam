@@ -1,0 +1,36 @@
+&namlog
+!   cn_logfile=
+   cn_verbosity='debug'
+!   in_maxerror=
+/
+
+&namcfg
+   cn_varcfg='cfg/variable.cfg'
+   cn_dimcfg='cfg/dimension.cfg'
+/
+
+&namcrs
+   cn_coord0='/home/n02/n02/ryapat30/work/nemo/Data/ORCA12/coordinates.nc'
+   in_perio0=4
+/
+
+&namfin
+   cn_coord1='SOCHIC_IN/coordinates.nc'
+   in_perio1=0
+!   ln_fillclosed=
+/
+
+&namvar
+   cn_varfile='Bathymetry:/home/n02/n02/ryapat30/work/nemo/Data/ORCA12/bathymetry_ORCA12_V3.3.nc'
+   cn_varinfo='Bathymetry: min=5'
+   cn_varinfo='Bathymetry: int=cubic'
+/
+
+&namnst
+   in_rhoi=1
+   in_rhoj=1
+/
+
+&namout
+   cn_fileout= 'SOCHIC_IN/bathy_meter.nc'
+/
